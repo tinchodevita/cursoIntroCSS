@@ -131,3 +131,57 @@ tr:hover {
     background-color: #aaa;
     cursor: pointer;
 }
+
+span {
+    display: block;
+    /* display: none; */
+    /* visibility: hidden; */
+    max-width: 300px;
+    background-color: red;
+}
+
+/* etiquetas con inline por default 'img' , 'a', span*/
+.inline {
+    display: inline;
+}
+
+#position {
+    position: sticky;
+    left: 20px;
+    top: 25px;
+}
+
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    height: 200px;
+}
+
+.right {
+    float: right;
+}
+
+.column {
+    margin: 0;
+    padding: 10px 0;
+    width: 33.33%;
+}
+
+/* inline-block con menues de nav con lins a la izquierda o la derecha. inline-block se utiliza para poder darle un alto y un ancho */
+.inline-block {
+    display: inline-block;
+    height: 55px;
+    background-color: red;
+}
+
+.center {
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}
