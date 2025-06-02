@@ -21,7 +21,7 @@ div h2, div h3{
 /* aplica propiedades que no han sido definidas */
 * {
     font-size: 24px;
-    color: black;
+    /* color: black; */
 }
 
 /* convencion hexadecimal
@@ -44,12 +44,90 @@ div h2, div h3{
         groove
         ridge
         inset
-        outset
+        outset  
         none
         hidden 
      */
     border-style:solid;
     border-color:blue;
     border-radius: 5px;
-    border-width: 5px;
+    border-width: 2rem;
+}
+
+#fondo {
+    background-color: rgba(255,0,0);
+    /* opacity: 0.3; */
+    height: 200px;
+    background: red url('yoto.jpg') repeat-y center bottom / 100px 100px;
+}
+
+.margen {
+    background-color: chocolate;
+    margin: 15px;
+    padding: 30px 15px 5px;
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+    outline: 1px solid red;
+}
+
+.text {
+    font-family: 'Kapakana', sans-serif;
+    text-align: justify;
+    text-decoration: overline;
+    text-shadow: 3px 5px 3px blue;
+}
+
+/* TODAS ESTAS CUALIDADES DE A: TIENEN QUE CUMPLIR ESTE ORDEN */
+/* a:link seleccionar cuando el link no ha sido visitado */
+a:link {
+    color: blueviolet;
+}
+
+/* a:visited seleccionar cuando el link ya fue visitado */
+a:visited {
+    color: grey;
+}
+
+/* a:hover se utiliza para cuando el mouse esta pasando por encima del link */
+a:hover {
+    color: yellow;
+}
+
+/* a:active es para cuando se clickea sobre el link */
+a:active {
+    color: red ;
+}
+
+ul {
+    background-color: cyan;
+    list-style-type: upper-roman;
+    /* padding-left: 0; */
+    /* list-style-position: inside; */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px black;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #153;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
 }
